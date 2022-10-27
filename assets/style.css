@@ -1,0 +1,102 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30%;
+    background-image: url(./pexels-pixabay-220051.jpg);
+    background-size: cover;
+}
+
+#gameBoard {
+    background-color: #34383B;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+    margin-left: 10%;
+}
+
+#gameBoard span {
+    background-color: #ebe6e6;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win {
+    text-decoration: line-through;
+    color: #A91D1D;
+}
+
+.inputs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 120px;
+    height: 20px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 6px;
+}
+
+label {
+    font-size: 30px;
+    color: #A91D1D;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ebe6e6;
+
+}
+
+#start {
+    width: 70px;
+    height: 24px;
+    border-radius: 4px;
+    border: none;
+   
+    cursor: pointer;
+    background-color: rgb(29, 29, 29);
+    color: #ebe6e6;
+}
+
+#start:hover {
+    background-color: #000;
+}
+
+.display {
+    width: 300px;
+}
+
+h2 {
+    animation: blink 1.5s infinite alternate;
+    color: #ce0303;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    margin-left: 80px;
+}
+
+
+@keyframes blink {
+    50%{
+        color: rgb(236, 200, 206);
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 460px) {
+    body {
+        margin-left: 0;
+    }
+
+    #start {
+        margin-top: 10px;
+        margin-left: 35%;
+    }
+}
